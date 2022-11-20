@@ -1,0 +1,29 @@
+{H:/Msc project/add/posit_add_8bit_tb.v} {1 {vlog -work work -vopt -stats=none {H:/Msc project/add/posit_add_8bit_tb.v}
+Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+-- Compiling module posit_add_8bit_tb_v
+
+Top level modules:
+	posit_add_8bit_tb_v
+
+} {} {}} {H:/Msc project/add/posit_add.v} {1 {vlog -work work -vopt -stats=none {H:/Msc project/add/posit_add.v}
+Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+-- Compiling module posit_add
+-- Compiling module data_extract_v1
+-- Compiling module sub_N
+-- Compiling module add_N
+-- Compiling module sub_N_in
+-- Compiling module add_N_in
+-- Compiling module add_sub_N
+-- Compiling module add_1
+-- Compiling module abs_regime
+-- Compiling module conv_2c
+-- Compiling module reg_exp_op
+-- Compiling module DSR_left_N_S
+-- Compiling module DSR_right_N_S
+-- Compiling module LOD_N
+-- Compiling module LOD
+
+Top level modules:
+	posit_add
+
+} {} {}}
