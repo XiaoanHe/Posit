@@ -1,0 +1,16 @@
+{H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Posit_Extraction.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Posit_Extraction.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package Posit_Extraction_sv_unit
+-- Compiling module Data_Extraction
+
+Top level modules:
+	Data_Extraction
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Leading_Bit_Detector.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Leading_Bit_Detector.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Leading_Bit_Detector
+
+Top level modules:
+	Leading_Bit_Detector
+
+} {} {}}

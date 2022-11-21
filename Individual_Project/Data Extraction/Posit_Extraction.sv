@@ -37,41 +37,29 @@ module Data_Extraction #( parameter N = 8, parameter ES = 3, parameter RS = log2
     output logic [N-ES+2:0] Mantissa
 );
 
+logic signed [N-2:0] InRemain;
+logic RegimeCheck; 
+logic [RS:0] EndPosition;
+logic signed [N-2:0] ShiftedRemain;
+int i;
+Leading_Bit_Detector #(.N(N), .ES(ES)) LBD1 (.*);
+
 always_comb
 begin
     // Sign Bit Extraction
-    logic signed [N-2:0] InRemain;
-
     Sign = In[N-1];
-    if(Sign = 1)    // if sign bit is 1, then 2's compliment
-        InRemain = ~In[N-2:0] + 1'b1;
-    else
-        InRemain = In[N-2:0];
+    // if sign bit is true, then 2's compliment
+    InRemain = Sign ? (~In[N-2:0] + 1'b1) : In[N-2:0];
 
     // Regime Bits Extraction
-    logic RegimeCheck = InRemain[N-2]; //the MSB of InRemain (In[6])is the number to be checked
+    
 
-    logic [RS-1:0] EndPosition = 1; // initial EP starts from InRemain[1] as InRemain[0] is RC
-
-    for(int i = 1; i < N-2; i++)
-        begin
-            /* 
-            compareing MSB of InRemain to the follwing bits
-            until the different bit turns up    
-            */
-            if(RegimeCheck == InRemain[((N-2)-i)])
-                EndPosition = EndPositon + 1;
-            else 
-                break;
-        end
-
-    if(RegimeCheck == 1)
+    if(RegimeCheck == 1'b1)
         RegimeValue = EndPosition - 1;
     else if (RegimeCheck == 0)
-        RegimeValue = -EndPositon;
+        RegimeValue = -EndPosition;
 
     //Exponent Bits Extraction
-    logic signed [N-2:0] ShiftedRemain;
     ShiftedRemain = InRemain << (EndPosition + 1 );
     Exponent = ShiftedRemain[N-1:((N-1)-ES)];
 
