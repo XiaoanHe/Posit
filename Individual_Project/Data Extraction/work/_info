@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11f MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
@@ -9,124 +10,134 @@ z2
 cModel Technology
 dd:/modelsim/examples
 vData_Extraction
-Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-DXx4 work 24 Posit_Extraction_sv_unit 0 22 Ik5d90Sbo;Z_5B[6;nN?c3
-!i10b 1
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+DXx4 work 24 Posit_Extraction_sv_unit 0 22 nHPXiXQN^`OPbJRiBjLAP0
+Z1 !s110 1669237135
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
-31
-!s100 :9jDL8fgjON>>ZZzI=UH]1
-IX?9gdS@<E5GRYXNjTL2OY0
+!i10b 1
+!s100 iLkU_]<WlDhGmB:=]B3Pj0
+IW8FlU70Ik^0U]Vo06bDA_0
 !s105 Posit_Extraction_sv_unit
 S1
-Z2 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction
-Z3 w1669058108
-Z4 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Posit_Extraction.sv
-Z5 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Posit_Extraction.sv
-L0 31
-Z6 OP;L;10.4a;61
-Z7 !s108 1669058622.000000
-Z8 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Posit_Extraction.sv|
-Z9 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Posit_Extraction.sv|
-!s101 -O0
+Z3 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction
+Z4 w1669133479
+Z5 8H:\INDIVIDUAL PROJECT\Posit\Individual_Project\Data Extraction\Posit_Extraction.sv
+Z6 FH:\INDIVIDUAL PROJECT\Posit\Individual_Project\Data Extraction\Posit_Extraction.sv
+!i122 45
+L0 31 42
+Z7 OV;L;2020.1;71
+31
+Z8 !s108 1669237135.000000
+Z9 !s107 H:\INDIVIDUAL PROJECT\Posit\Individual_Project\Data Extraction\Posit_Extraction.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:\INDIVIDUAL PROJECT\Posit\Individual_Project\Data Extraction\Posit_Extraction.sv|
 !i113 1
-Z10 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+Z11 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 tCvgOpt 0
 n@data_@extraction
 vLeading_Bit_Detector
 R0
-!i10b 1
 R1
+!i10b 1
+!s100 l2kJkAGiPg>e_:A3_V9GP2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IT;<KlXimJY^J7P];WGhFP3
+R2
+S1
+R3
+w1669059504
+8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Leading_Bit_Detector.sv
+FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Leading_Bit_Detector.sv
+!i122 46
+L0 19 42
+R7
 r1
 !s85 0
 31
-!s100 RGaB4Z:d;NgXmE1MinB4=3
-I6CV7iYKKRNiPVe<:Jd7OZ3
-!s105 Leading_Bit_Detector_sv_unit
-S1
-R2
-w1669057534
-8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Leading_Bit_Detector.sv
-FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Leading_Bit_Detector.sv
-L0 19
-R6
-R7
+R8
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Leading_Bit_Detector.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Leading_Bit_Detector.sv|
-!s101 -O0
 !i113 1
-R10
+R11
+R12
 n@leading_@bit_@detector
 XPosit_Extraction_sv_unit
 R0
-!i10b 1
-VIk5d90Sbo;Z_5B[6;nN?c3
+R1
+VnHPXiXQN^`OPbJRiBjLAP0
 r1
 !s85 0
-31
-!s100 6V1A`S@cEfY:22eJ`[9ie0
-IIk5d90Sbo;Z_5B[6;nN?c3
+!i10b 1
+!s100 kD:D>MQOSDCfWmn>>:`Rk0
+InHPXiXQN^`OPbJRiBjLAP0
 !i103 1
 S1
-R2
 R3
 R4
 R5
-L0 22
 R6
+!i122 45
+L0 22 0
 R7
+31
 R8
 R9
-!s101 -O0
-!i113 1
 R10
+!i113 1
+R11
+R12
 n@posit_@extraction_sv_unit
 vTest_Data_Extraction
 R0
-DXx4 work 28 Test_Data_Extraction_sv_unit 0 22 eO`G7lR:hj`hW^[elH1aV3
+DXx4 work 28 Test_Data_Extraction_sv_unit 0 22 0d@CAzkJY053^Nzd6l`^n1
 R1
+R2
 r1
 !s85 0
-31
 !i10b 1
-!s100 3RPk2ZiH_2bbhhGLnk:DO1
-I63^h:jSFcYooFdfcf]]f60
+!s100 LAOX3S:7DFNS11IQGij=i0
+IOX[^eCI>Y[Kff1d<z=PcL0
 !s105 Test_Data_Extraction_sv_unit
 S1
-R2
-Z11 w1669058862
-Z12 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Test_Data_Extraction.sv
-Z13 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Test_Data_Extraction.sv
-L0 27
-R6
-Z14 !s108 1669058866.000000
-Z15 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Test_Data_Extraction.sv|
+R3
+Z13 w1669133480
+Z14 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Test_Data_Extraction.sv
+Z15 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Test_Data_Extraction.sv
+!i122 47
+L0 27 34
+R7
+31
+R8
+!s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Test_Data_Extraction.sv|
 Z16 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Test_Data_Extraction.sv|
-!s101 -O0
 !i113 1
-R10
+R11
+R12
 n@test_@data_@extraction
 XTest_Data_Extraction_sv_unit
 R0
-VeO`G7lR:hj`hW^[elH1aV3
+R1
+V0d@CAzkJY053^Nzd6l`^n1
 r1
 !s85 0
-31
 !i10b 1
-!s100 DNiobLRHe5470J9VAIX`k1
-IeO`G7lR:hj`hW^[elH1aV3
+!s100 `SEC=c[aJ8;@bWhH8nb>=0
+I0d@CAzkJY053^Nzd6l`^n1
 !i103 1
 S1
-R2
-R11
-R12
+R3
 R13
-L0 18
-R6
 R14
 R15
+!i122 47
+L0 18 0
+R7
+31
+R8
+Z17 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Data Extraction/Test_Data_Extraction.sv|
 R16
-!s101 -O0
 !i113 1
-R10
+R11
+R12
 n@test_@data_@extraction_sv_unit

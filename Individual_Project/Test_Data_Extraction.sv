@@ -35,6 +35,7 @@ logic Sign;
 logic signed [RS:0] RegimeValue;
 logic [ES-1:0] Exponent;
 logic [N-ES+2:0] Mantissa;
+logic signed [N-2:0] InRemain;
 
 Data_Extraction #(.N(N), .ES(ES)) extract1 (.*);
 
