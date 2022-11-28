@@ -1,4 +1,5 @@
-module data_extract #(parameter N=8, parameter Bs=log2(N), parameter es=4, parameter Rmax = N-1, parameter Rmin = -(N-1))
+module data_extract #(parameter N=8, parameter Bs=log2(N), 
+parameter es=4, parameter Rmax = N-1, parameter Rmin = -(N-1))
 (input logic signed [N-1:0] in,
 output logic Sin,
 output logic [es-1:0] exp,
