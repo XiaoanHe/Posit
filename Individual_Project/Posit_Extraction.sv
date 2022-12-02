@@ -34,7 +34,7 @@ module Data_Extraction #( parameter N = 8, parameter ES = 3, parameter RS = log2
     output logic Sign,
     output logic signed [RS:0] RegimeValue,
     output logic [ES-1:0] Exponent,
-    output logic [N-ES+2:0] Mantissa
+    output logic [N-ES+2:0] Mantissa,
     output logic signed [N-2:0] InRemain
 );
 
