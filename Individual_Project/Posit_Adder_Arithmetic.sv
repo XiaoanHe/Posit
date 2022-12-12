@@ -36,8 +36,7 @@ module Alignment #(parameter N = 8, parameter ES = 3, parameter RS = log2(N))
     output logic [N:0] Add_Mant,
     output logic signed [ES+RS:0] LE_O,
     output logic [ES-1:0] E_O,
-    output logic signed [RS:0] R_O,
-    output logic signed [N-1:0] Result
+    output logic signed [RS:0] R_O
 );
     logic Operation;
     // components to corresponding logic, L - Large S - Small
@@ -45,7 +44,7 @@ module Alignment #(parameter N = 8, parameter ES = 3, parameter RS = log2(N))
     logic [RS:0] LR, SR;
     logic LRC, SRC;
     logic [ES-1:0]LE, SE;
-    logic [N:0]LM, SM, SM_tmp;
+    logic [N-ES+2:0]LM, SM, SM_tmp;
     // logic SS;
     // logic [RS:0]SR;
     // logic SRC;
@@ -57,9 +56,7 @@ module Alignment #(parameter N = 8, parameter ES = 3, parameter RS = log2(N))
     logic Mant_Ovf;
     logic signed [RS:0] shift;
     logic [ES+RS:0] LE_ON;
-    logic [N-1:0] RegimeBits;
     //Leading_Bit_Detector_8b #(.N(N), .ES(ES)) LBD_Mant (.*);
-    logic [N-1:0] ONEs;
 
 always_comb
 begin
@@ -74,12 +71,13 @@ begin
     LR = Greater_Than ? RegimeValue1 : RegimeValue2;
     LRC = Greater_Than? InRemain1[N-2] : InRemain2[N-2];
     LE = Greater_Than ? Exponent1 : Exponent2;
-    LM = Greater_Than ? {1'b0, Mantissa1} : {1'b0,Mantissa2};
+    LM = Greater_Than ? Mantissa1 : Mantissa2;
 
     SS = Greater_Than ? Sign2 : Sign1;
     SR = Greater_Than ? RegimeValue2 : RegimeValue1;
     SE = Greater_Than ? Exponent2 : Exponent1;
-    SM = Greater_Than ? {1'b0, Mantissa2} : {1'b0,Mantissa1};
+    SM = Greater_Than ? Mantissa2 : Mantissa1;
+
 
     // Mantissa Addition
     /*
@@ -131,39 +129,12 @@ begin
     taking overflow and left shift into account
     */
     LE_O = {LR, LE} + Mant_Ovf; //- shift;
-    
+
     LE_ON =  LE_O[RS+ES] ? (-LE_O) : LE_O;
-    /*
-        if LE_O is -ve and Least Significant ES bits of LE_ON is non zero
-        E_O is 2's complement of Least Significant ES bits of LE_ON
-        if LE_O is positive, E_O = LSB ES bits of LE_O    
-    */
-    if (!LE_O[ES+RS])
-        E_O = LE_O[ES-1:0];
-    else if (|LE_ON[ES-1:0])
-        E_O = LE_O[ES-1:0];
-    else
-        E_O = LE_ON[ES-1:0];
-    /*  
-        if LE_O is +ve OR LE_O is -ve and LSB ES bits of LE_ON is non zero
-        R_O = 
-    */
+
+    E_O = (LE_O[ES+RS] & (|LE_ON[ES-1:0])) ? (~LE_O[ES-1:0] + 1'b1) : LE_ON[ES-1:0];
+
     //R_O = LE_O[ES+RS:ES];
-    if (!LE_O[ES+RS])
-        R_O = LE_ON[ES+RS-1 : ES];
-    else if ((LE_O[ES+RS]&(|LE_ON[ES-1 : 0])))
-        R_O =  (LE_ON[ES+RS-1 : ES] +1'b1);
-    
-    // Post Processing
-    ONEs = '1;
-    if (!R_O[RS])
-    RegimeBits = ONEs << (8-1-R_O);
-    else
-    RegimeBits = ONEs >> (8-R_O);
-
-    // RB_tmp = RegimeBits[N-1:N-(R_O+2)];
-    
-    // Result = {LS, RB_tmp, E_O};
-
+    R_O = !LE_O[ES+RS]|(LE_O[ES+RS]&(|LE_ON[ES-1 : 0])) ? (LE_ON[ES+RS-1 : ES] +1'b1) : LE_ON[ES+RS-1 : ES];
 end
 endmodule

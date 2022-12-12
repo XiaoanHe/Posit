@@ -13,7 +13,7 @@
 // Author     : Xiaoan He (Jasper)
 //            : xh2g20@ecs.soton.ac.uk
 //
-// Revision   : Version 1.0 21/11/2022
+// Revision   : Version 1.1 30/11/2022
 /////////////////////////////////////////////////////////////////////
 function [31:0] log2;
 input reg [31:0] value;

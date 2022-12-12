@@ -82,18 +82,18 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	rounding
 
-} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/Alignment.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/Alignment.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module alignment
-
-Top level modules:
-	alignment
-
 } {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/normalization.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/normalization.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module normalization
 
 Top level modules:
 	normalization
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/Alignment.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/Alignment.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alignment
+
+Top level modules:
+	alignment
 
 } {} {}}

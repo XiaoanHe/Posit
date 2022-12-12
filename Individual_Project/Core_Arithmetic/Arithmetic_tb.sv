@@ -35,10 +35,11 @@ logic [N-ES+2:0] Mantissa1, Mantissa2;
 
 //output logic
 logic [N-1:0] E_diff;
-logic [N-1:0] Add_Mant;
+logic [N:0] Add_Mant;
 logic signed [ES+RS:0] LE_O;
 logic [ES-1:0] E_O;
-logic signed [RS-1:0] R_O;
+logic signed [RS:0] R_O;
+logic signed [N-1:0] Result;
 
 Alignment #(.N(N), .ES(ES)) alignment_tb (.*);
 
@@ -66,26 +67,26 @@ initial
                Mantissa1 = 8'b10000000;
                Mantissa2 = 8'b11000000;
                
-       //  #50ns  InRemain1 = 7'b1110_011;
-       //         InRemain2 = 7'b001_101_1;
-       //         Sign1 = 0;
-       //         Sign2 = 0;
-       //         RegimeValue1 = 2;
-       //         RegimeValue2 = -2;
-       //         Exponent1 = 3'b011;
-       //         Exponent2 = 3'b101;
-       //         Mantissa1 = '0;
-       //         Mantissa2 = '0;
-
-        #50ns  InRemain1 = 7'b01_011_10;
+        #50ns  InRemain1 = 7'b110_100_0;
                InRemain2 = 7'b001_101_1;
                Sign1 = 0;
                Sign2 = 0;
-               RegimeValue1 = -1;
+               RegimeValue1 = 1;
                RegimeValue2 = -2;
-               Exponent1 = 3'b011;
+               Exponent1 = 3'b100;
                Exponent2 = 3'b101;
-               Mantissa1 = 8'b11000000;
+               Mantissa1 = 8'b10000000;
                Mantissa2 = 8'b11000000;
+
+       //  #50ns  InRemain1 = 7'b01_011_10;
+       //         InRemain2 = 7'b001_101_1;
+       //         Sign1 = 0;
+       //         Sign2 = 0;
+       //         RegimeValue1 = -1;
+       //         RegimeValue2 = -2;
+       //         Exponent1 = 3'b011;
+       //         Exponent2 = 3'b101;
+       //         Mantissa1 = 8'b11000000;
+       //         Mantissa2 = 8'b11000000;
     end
 endmodule

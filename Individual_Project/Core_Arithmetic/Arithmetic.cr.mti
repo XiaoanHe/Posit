@@ -1,0 +1,16 @@
+{H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Leading_Bit_Detector_8b.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Leading_Bit_Detector_8b.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Leading_Bit_Detector_8b
+
+Top level modules:
+	Leading_Bit_Detector_8b
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Posit_Adder_Arithmetic.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Posit_Adder_Arithmetic.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package Posit_Adder_Arithmetic_sv_unit
+-- Compiling module Alignment
+
+Top level modules:
+	Alignment
+
+} {} {}}
