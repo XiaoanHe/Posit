@@ -13,7 +13,7 @@
 // Author     : Xiaoan(Jasper) He 
 //            : xh2g20@soton.ac.uk
 //
-// Revision   : Version 1.0 01/12/2022
+// Revision   : Version 1.0 02/02/2023
 /////////////////////////////////////////////////////////////////////
 
 function [31:0] log2;
