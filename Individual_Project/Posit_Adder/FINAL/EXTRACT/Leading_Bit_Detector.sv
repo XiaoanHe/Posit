@@ -10,7 +10,7 @@
 //            : 
 // System     : SystemVerilog IEEE 1800-2005
 //            :
-// Author     : Xiaoan He (Jasper)
+// Author     : Xiaoan(Jasper) He 
 //            : xh2g20@ecs.soton.ac.uk
 //
 // Revision   : Version 1.0 21/11/2022

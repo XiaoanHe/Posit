@@ -164,7 +164,7 @@ begin
     //     LE_ON = -LE_O;
     //     if(|LE_ON[ES-1:0])
     //         begin
-    //         E_O = LE_ON[ES-1:0];
+    //         E_O = LE_O[ES-1:0];
     //         R_O = LE_ON[ES+RS:ES]+1;
     //         end
     //     else   
@@ -174,7 +174,7 @@ begin
     //         end
     //     end
 
-    //tmp_o = { {N{~LE_O[ES+RS]}}, LE_O[ES+RS], E_O, Add_Mant[N-1:((N-1)-(2N-N-1-ES))], 3'b0 };
+    
     tmp_o = { {N{~LE_O[ES+RS]}}, LE_O[ES+RS], E_O, Add_Mant[(N-1):(N-(2*N-N-1-ES))], 3'b0 };
     sft_tmp_o = {tmp_o, 8'b0} ;
     sft_tmp_o = sft_tmp_o>> R_O;

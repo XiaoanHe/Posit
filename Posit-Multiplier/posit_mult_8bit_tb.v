@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module posit_add_8bit_tb_v;
+module posit_mult_8bit_tb_v;
 
 function [31:0] log2;
 input reg [31:0] value;
@@ -16,10 +16,7 @@ parameter es=3;
 
 reg [N-1:0] in1, in2;
 reg start; 
-wire out_s;
-wire [Bs-1:0] out_r;
-wire [Bs+es-1:0]out_e;
-wire [N-1:0] out_m, out;
+wire [N-1:0] out;
 wire done;
 
 	reg clk;
@@ -27,10 +24,10 @@ wire done;
 
 
 // Instantiate the Unit Under Test (UUT)
-posit_add #(.N(N), .es(es)) uut (in1, in2, start, out, inf, zero, done);
+posit_mult #(.N(N), .es(es)) uut (in1, in2, start, out, inf, zero, done);
 
-reg [N-1:0] data1 [1:65536];
-reg [N-1:0] data2 [1:65536];
+reg [N-1:0] data1 [1:65534];
+reg [N-1:0] data2 [1:65534];
 initial $readmemb("Pin1_8bit.txt",data1);
 initial $readmemb("Pin2_8bit.txt",data2);
 
@@ -47,7 +44,7 @@ reg [15:0] i;
 		// Wait 100 ns for global reset to finish
 		#100 i=0;
 		#20 start = 1;
-                #655500 start = 0;
+                #652790 start = 0;
 		#100;
 		
 		$fclose(outfile);
@@ -66,13 +63,12 @@ reg [15:0] i;
 
 initial outfile = $fopen("error_8bit.txt", "wb");
 
-reg [N-1:0] result [1:65536];
+reg [N-1:0] result [1:65534];
 initial $readmemb("Pout_8bit_ES4.txt",result);
 reg [N-1:0] diff;
 always @(negedge clk) begin
 	if(start)begin
      	diff = (result[i-1] > out) ? result[i-1]-out : out-result[i-1];
-     	//$fwrite(outfile, "%h\t%h\t%h\t%h\t%d\n",in1, in2, out,result[i-1],diff);
      	$fwrite(outfile, "%d\n",diff);
      	end
 end

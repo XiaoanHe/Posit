@@ -11,25 +11,25 @@ cModel Technology
 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project
 vAlignment
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-DXx4 work 30 Posit_Adder_Arithmetic_sv_unit 0 22 B`XfR2b6]D9JKDlmI^HRj3
-Z1 !s110 1670879067
+DXx4 work 30 Posit_Adder_Arithmetic_sv_unit 0 22 7inRU@LjQa63VbeW^DgGI0
+Z1 !s110 1675376487
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 !i10b 1
-!s100 [YB<EJEMLEBBY5][Lb5Zj3
-Ii1>Pd?mI2HGco;fKe9hbL2
+!s100 Z5k2;Z6GGCbUnz3aoD^Dg1
+IG4IX3Wf1>Y5fnk83BbJAO1
 !s105 Posit_Adder_Arithmetic_sv_unit
 S1
 Z3 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic
-Z4 w1670878768
+Z4 w1675363700
 Z5 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Posit_Adder_Arithmetic.sv
 Z6 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Posit_Adder_Arithmetic.sv
-!i122 96
-L0 28 142
+!i122 120
+L0 28 193
 Z7 OV;L;2020.1;71
 31
-Z8 !s108 1670879066.000000
+Z8 !s108 1675376487.000000
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Posit_Adder_Arithmetic.sv|
 Z9 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Posit_Adder_Arithmetic.sv|
 !i113 1
@@ -38,60 +38,60 @@ Z11 tCvgOpt 0
 n@alignment
 vArithmetic_tb
 R0
-DXx4 work 21 Arithmetic_tb_sv_unit 0 22 He=gbQ[eS9LG<X>RV[3Oh2
-Z12 !s110 1670879066
+DXx4 work 21 Arithmetic_tb_sv_unit 0 22 Db^^Yj<5`@Sb52_IDKYOM1
+R1
 R2
 r1
 !s85 0
 !i10b 1
-!s100 =K<AaU`n8=[fbgeXm`R_V2
-I3CCTD3FAH8JXLLHnKE9Sn0
+!s100 S55eQSMQ0_J042KPfOS[h2
+I`lo`nG;I>z0f]^4QXW02X1
 !s105 Arithmetic_tb_sv_unit
 S1
 R3
-Z13 w1670879062
-Z14 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Arithmetic_tb.sv
-Z15 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Arithmetic_tb.sv
-!i122 94
-L0 26 67
+Z12 w1675376482
+Z13 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Arithmetic_tb.sv
+Z14 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Arithmetic_tb.sv
+!i122 118
+L0 26 98
 R7
 31
 R8
-Z16 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Arithmetic_tb.sv|
-Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Arithmetic_tb.sv|
+Z15 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Arithmetic_tb.sv|
+Z16 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Arithmetic_tb.sv|
 !i113 1
 R10
 R11
 n@arithmetic_tb
 XArithmetic_tb_sv_unit
 R0
-R12
-VHe=gbQ[eS9LG<X>RV[3Oh2
+R1
+VDb^^Yj<5`@Sb52_IDKYOM1
 r1
 !s85 0
 !i10b 1
-!s100 3Akh<gV;ih>g:S9c0GnaK0
-IHe=gbQ[eS9LG<X>RV[3Oh2
+!s100 JKL3RalUoKW3`Tbk06^Bf3
+IDb^^Yj<5`@Sb52_IDKYOM1
 !i103 1
 S1
 R3
+R12
 R13
 R14
-R15
-!i122 94
+!i122 118
 L0 17 0
 R7
 31
 R8
+R15
 R16
-R17
 !i113 1
 R10
 R11
 n@arithmetic_tb_sv_unit
 vLeading_Bit_Detector_8b
 R0
-R12
+R1
 !i10b 1
 !s100 =HQ3nV>N<8D?N9VoN9:9T0
 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -99,10 +99,10 @@ IPZMfY?cQz5abD?j^l5oT90
 R2
 S1
 R3
-w1669929498
+w1675369552
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Leading_Bit_Detector_8b.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Leading_Bit_Detector_8b.sv
-!i122 95
+!i122 119
 L0 19 42
 R7
 r1
@@ -118,24 +118,24 @@ n@leading_@bit_@detector_8b
 XPosit_Adder_Arithmetic_sv_unit
 R0
 R1
-VB`XfR2b6]D9JKDlmI^HRj3
+V7inRU@LjQa63VbeW^DgGI0
 r1
 !s85 0
 !i10b 1
-!s100 O`CieK`S`XizcPImVXjOS2
-IB`XfR2b6]D9JKDlmI^HRj3
+!s100 i8^CF2SiVHi_]Hm_GSJTk3
+I7inRU@LjQa63VbeW^DgGI0
 !i103 1
 S1
 R3
 R4
 R5
 R6
-!i122 96
+!i122 120
 L0 19 0
 R7
 31
 R8
-Z18 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Posit_Adder_Arithmetic.sv|
+Z17 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Core_Arithmetic/Posit_Adder_Arithmetic.sv|
 R9
 !i113 1
 R10
