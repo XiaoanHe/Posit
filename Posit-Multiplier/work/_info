@@ -1,0 +1,224 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dH:/INDIVIDUAL PROJECT/Posit/posit_adder_verilog
+vdata_extract
+Z0 !s110 1675721709
+!i10b 1
+!s100 bjeF6F64W7Lj7z?e;6_fD2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ib_J[Oh7M8aioU?h;XPOoi3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dH:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier
+Z4 w1560477736
+8H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/data_extract.v
+FH:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/data_extract.v
+!i122 1
+L0 1 36
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1675721709.000000
+!s107 H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/data_extract.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/data_extract.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vDSR_left_N_S
+Z9 !s110 1675721710
+!i10b 1
+!s100 B?i1M95RNBCz5m0iM@LFO3
+R1
+IMnHzdzDMA_h_gmGFAMU9f2
+R2
+R3
+R4
+8H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/DSR_left_N_S.v
+FH:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/DSR_left_N_S.v
+!i122 2
+Z10 L0 1 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/DSR_left_N_S.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/DSR_left_N_S.v|
+!i113 1
+R7
+R8
+n@d@s@r_left_@n_@s
+vDSR_right_N_S
+R9
+!i10b 1
+!s100 OUIjYV3Wfb0T1J7O0;5nK0
+R1
+I1ORn05PS9EAE^@g1`BJ=a1
+R2
+R3
+R4
+8H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/DSR_right_N_S.v
+FH:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/DSR_right_N_S.v
+!i122 3
+R10
+R5
+r1
+!s85 0
+31
+Z11 !s108 1675721710.000000
+!s107 H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/DSR_right_N_S.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/DSR_right_N_S.v|
+!i113 1
+R7
+R8
+n@d@s@r_right_@n_@s
+vLOD
+R9
+!i10b 1
+!s100 NGgdm6?:UYZE6fJe=CDMG1
+R1
+I:8jlGKoGdUaQz1l`h8:PM2
+R2
+R3
+R4
+Z12 8H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/LOD_N.v
+Z13 FH:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/LOD_N.v
+!i122 4
+L0 22 38
+R5
+r1
+!s85 0
+31
+R11
+Z14 !s107 H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/LOD_N.v|
+Z15 !s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/LOD_N.v|
+!i113 1
+R7
+R8
+n@l@o@d
+vLOD_N
+R9
+!i10b 1
+!s100 ZI7FE7`XoKeKii^RZhd7;1
+R1
+IKCcMdXH84Rh79U2Cg_akG2
+R2
+R3
+R4
+R12
+R13
+!i122 4
+Z16 L0 1 19
+R5
+r1
+!s85 0
+31
+R11
+R14
+R15
+!i113 1
+R7
+R8
+n@l@o@d_@n
+vLZD
+R9
+!i10b 1
+!s100 gnbXAb9=>n6JYcHRHZBb13
+R1
+ILd_gH4O6OU=UF^EbTmVcL2
+R2
+R3
+R4
+Z17 8H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/LZD_N.v
+Z18 FH:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/LZD_N.v
+!i122 5
+L0 22 39
+R5
+r1
+!s85 0
+31
+R11
+Z19 !s107 H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/LZD_N.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/LZD_N.v|
+!i113 1
+R7
+R8
+n@l@z@d
+vLZD_N
+R9
+!i10b 1
+!s100 9a?oF>>8T:iG[B^5h[oZh0
+R1
+Ij9e?5g2Leh52YV]UdFl673
+R2
+R3
+R4
+R17
+R18
+!i122 5
+R16
+R5
+r1
+!s85 0
+31
+R11
+R19
+R20
+!i113 1
+R7
+R8
+n@l@z@d_@n
+vposit_mult
+R9
+!i10b 1
+!s100 42dDeoKEhTEzVlTJ`EIz81
+R1
+I_;jJE=4T[^L<SbP:M[Y7Y1
+R2
+R3
+R4
+8H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/posit_mult.v
+FH:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/posit_mult.v
+!i122 6
+L0 3 77
+R5
+r1
+!s85 0
+31
+R11
+!s107 H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/posit_mult.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/posit_mult.v|
+!i113 1
+R7
+R8
+vposit_mult_8bit_tb_v
+R0
+!i10b 1
+!s100 Da^^8jB9ZQQPia6IeA[S:1
+R1
+IZSK;nEFRBS7Y:iUI30@?j0
+R2
+R3
+w1675721622
+8H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/posit_mult_8bit_tb.v
+FH:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/posit_mult_8bit_tb.v
+!i122 0
+L0 2 74
+R5
+r1
+!s85 0
+31
+R6
+!s107 H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/posit_mult_8bit_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Posit-Multiplier/posit_mult_8bit_tb.v|
+!i113 1
+R7
+R8

@@ -1,0 +1,99 @@
+{H:/INDIVIDUAL PROJECT/Posit/T/LOD1.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/LOD1.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module LOD1
+
+Top level modules:
+	LOD1
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/sticky_bit_adjustor.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/sticky_bit_adjustor.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sticky_bit_adjustor
+
+Top level modules:
+	sticky_bit_adjustor
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/sticky_bit_adjustor1.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/sticky_bit_adjustor1.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sticky_bit_adjustor1
+
+Top level modules:
+	sticky_bit_adjustor1
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/posit_adder_8bit_tb.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/posit_adder_8bit_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module posit_adder_8bit_tb_v
+
+Top level modules:
+	posit_adder_8bit_tb_v
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/DSR_left_N_S.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/DSR_left_N_S.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DBsR_left_N_Bs
+
+Top level modules:
+	DBsR_left_N_Bs
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/data_extract.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/data_extract.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module data_extract
+
+Top level modules:
+	data_extract
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/add_N.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/add_N.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add_N
+
+Top level modules:
+	add_N
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/posit_adder.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/posit_adder.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module posit_adder
+
+Top level modules:
+	posit_adder
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/LOD.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/LOD.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module LOD
+
+Top level modules:
+	LOD
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/testExtract.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/testExtract.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testExtract
+
+Top level modules:
+	testExtract
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/DSR_right_N_S.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/DSR_right_N_S.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DSR_right_N_S
+
+Top level modules:
+	DSR_right_N_S
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/rounding.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/rounding.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module rounding
+
+Top level modules:
+	rounding
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/normalization.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/normalization.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module normalization
+
+Top level modules:
+	normalization
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/T/Alignment.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/T/Alignment.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alignment
+
+Top level modules:
+	alignment
+
+} {} {}}

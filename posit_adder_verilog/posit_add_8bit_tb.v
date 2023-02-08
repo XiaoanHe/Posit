@@ -12,7 +12,7 @@ endfunction
 
 parameter N=8;
 parameter Bs=log2(N);
-parameter es=4;
+parameter es=3;
 
 reg [N-1:0] in1, in2;
 reg start; 
