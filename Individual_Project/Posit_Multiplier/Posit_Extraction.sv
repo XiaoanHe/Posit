@@ -29,7 +29,7 @@ module Data_Extraction #( parameter N = 8, parameter ES = 3, parameter RS = $clo
     output logic signed [N-2:0] InRemain
 );
 
-
+assign Sign = In[N-1];
 logic RegimeCheck; 
 logic signed [RS:0] EndPosition;
 logic signed [N-2:0] ShiftedRemain;
@@ -40,7 +40,6 @@ Leading_Bit_Detector #(.N(N), .ES(ES)) LBD1 (.*);
 always_comb
 begin
     // Sign Bit Extraction
-    Sign = In[N-1];
 
     // if sign bit is 1, then 2's compliment
     if (Sign)
