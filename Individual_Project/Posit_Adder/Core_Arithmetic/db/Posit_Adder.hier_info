@@ -1,0 +1,165 @@
+|Posit_Adder
+IN1[0] => IN1[0].IN1
+IN1[1] => IN1[1].IN1
+IN1[2] => IN1[2].IN1
+IN1[3] => IN1[3].IN1
+IN1[4] => IN1[4].IN1
+IN1[5] => IN1[5].IN1
+IN1[6] => IN1[6].IN1
+IN1[7] => IN1[7].IN1
+IN2[0] => IN2[0].IN1
+IN2[1] => IN2[1].IN1
+IN2[2] => IN2[2].IN1
+IN2[3] => IN2[3].IN1
+IN2[4] => IN2[4].IN1
+IN2[5] => IN2[5].IN1
+IN2[6] => IN2[6].IN1
+IN2[7] => IN2[7].IN1
+OUT[0] << sft_tmp_oN.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] << sft_tmp_oN.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] << sft_tmp_oN.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] << sft_tmp_oN.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] << sft_tmp_oN.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] << sft_tmp_oN.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] << sft_tmp_oN.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] << LS.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Posit_Adder|Data_Extraction:Extract_IN1
+In[0] => InRemain.DATAA
+In[0] => Add0.IN8
+In[1] => InRemain.DATAA
+In[1] => Add0.IN7
+In[2] => InRemain.DATAA
+In[2] => Add0.IN6
+In[3] => InRemain.DATAA
+In[3] => Add0.IN5
+In[4] => InRemain.DATAA
+In[4] => Add0.IN4
+In[5] => InRemain.DATAA
+In[5] => Add0.IN3
+In[6] => InRemain.DATAA
+In[6] => Add0.IN2
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => Sign.DATAIN
+Sign <= In[7].DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[0] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[1] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[2] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[3] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[4] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+Exponent[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Exponent[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Exponent[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[0] <= <GND>
+Mantissa[1] <= <GND>
+Mantissa[2] <= <GND>
+Mantissa[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[4] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[5] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[6] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[7] <= <VCC>
+InRemain[0] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[1] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[2] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[3] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[4] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[5] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[6] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Posit_Adder|Data_Extraction:Extract_IN1|Leading_Bit_Detector:LBD1
+InRemain[0] => ~NO_FANOUT~
+InRemain[1] => always0.IN0
+InRemain[2] => always0.IN0
+InRemain[3] => always0.IN0
+InRemain[4] => always0.IN0
+InRemain[5] => always0.IN0
+InRemain[6] => always0.IN1
+InRemain[6] => always0.IN1
+InRemain[6] => always0.IN1
+InRemain[6] => always0.IN1
+InRemain[6] => always0.IN1
+InRemain[6] => RegimeCheck.DATAIN
+EndPosition[0] <= EndPosition.DB_MAX_OUTPUT_PORT_TYPE
+EndPosition[1] <= EndPosition.DB_MAX_OUTPUT_PORT_TYPE
+EndPosition[2] <= EndPosition.DB_MAX_OUTPUT_PORT_TYPE
+EndPosition[3] <= EndPosition.DB_MAX_OUTPUT_PORT_TYPE
+RegimeCheck <= InRemain[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Posit_Adder|Data_Extraction:Extract_IN2
+In[0] => InRemain.DATAA
+In[0] => Add0.IN8
+In[1] => InRemain.DATAA
+In[1] => Add0.IN7
+In[2] => InRemain.DATAA
+In[2] => Add0.IN6
+In[3] => InRemain.DATAA
+In[3] => Add0.IN5
+In[4] => InRemain.DATAA
+In[4] => Add0.IN4
+In[5] => InRemain.DATAA
+In[5] => Add0.IN3
+In[6] => InRemain.DATAA
+In[6] => Add0.IN2
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => InRemain.OUTPUTSELECT
+In[7] => Sign.DATAIN
+Sign <= In[7].DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[0] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[1] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[2] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[3] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+RegimeValue[4] <= RegimeValue.DB_MAX_OUTPUT_PORT_TYPE
+Exponent[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Exponent[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Exponent[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[0] <= <GND>
+Mantissa[1] <= <GND>
+Mantissa[2] <= <GND>
+Mantissa[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[4] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[5] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[6] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+Mantissa[7] <= <VCC>
+InRemain[0] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[1] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[2] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[3] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[4] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[5] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+InRemain[6] <= InRemain.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Posit_Adder|Data_Extraction:Extract_IN2|Leading_Bit_Detector:LBD1
+InRemain[0] => ~NO_FANOUT~
+InRemain[1] => always0.IN0
+InRemain[2] => always0.IN0
+InRemain[3] => always0.IN0
+InRemain[4] => always0.IN0
+InRemain[5] => always0.IN0
+InRemain[6] => always0.IN1
+InRemain[6] => always0.IN1
+InRemain[6] => always0.IN1
+InRemain[6] => always0.IN1
+InRemain[6] => always0.IN1
+InRemain[6] => RegimeCheck.DATAIN
+EndPosition[0] <= EndPosition.DB_MAX_OUTPUT_PORT_TYPE
+EndPosition[1] <= EndPosition.DB_MAX_OUTPUT_PORT_TYPE
+EndPosition[2] <= EndPosition.DB_MAX_OUTPUT_PORT_TYPE
+EndPosition[3] <= EndPosition.DB_MAX_OUTPUT_PORT_TYPE
+RegimeCheck <= InRemain[6].DB_MAX_OUTPUT_PORT_TYPE
+
+

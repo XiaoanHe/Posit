@@ -1,0 +1,22 @@
+{H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Multiplier_tb.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Multiplier_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Posit_Multiplier_tb
+
+Top level modules:
+	Posit_Multiplier_tb
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Leading_Bit_Detector.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Leading_Bit_Detector.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Leading_Bit_Detector
+
+Top level modules:
+	Leading_Bit_Detector
+
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Extraction.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Extraction.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Data_Extraction
+
+Top level modules:
+	Data_Extraction
+
+} {} {}}

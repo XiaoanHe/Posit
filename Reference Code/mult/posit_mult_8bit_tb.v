@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 module posit_mult_8bit_tb_v;
 
 function [31:0] log2;

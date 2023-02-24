@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+// `timescale 1ns / 1ps
 module posit_add_8bit_tb_v;
 
 function [31:0] log2;
@@ -12,7 +12,7 @@ endfunction
 
 parameter N=8;
 parameter Bs=log2(N);
-parameter es=4;
+parameter es=3;
 
 reg [N-1:0] in1, in2;
 reg start; 
@@ -65,16 +65,18 @@ reg [15:0] i;
  end
 
 initial outfile = $fopen("error_8bit.txt", "wb");
-
+reg [N-1:0] show_result;
 reg [N-1:0] result [1:65536];
 initial $readmemb("Pout_8bit_ES4.txt",result);
 reg [N-1:0] diff;
 always @(negedge clk) begin
 	if(start)begin
+		show_result = result[i-1];
      	diff = (result[i-1] > out) ? result[i-1]-out : out-result[i-1];
      	//$fwrite(outfile, "%h\t%h\t%h\t%h\t%d\n",in1, in2, out,result[i-1],diff);
      	$fwrite(outfile, "%d\n",diff);
      	end
 end
+
 endmodule
 

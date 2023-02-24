@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 //(* use_dsp = "no" *)
 module posit_mult(in1, in2, start, out, inf, zero, done);
 

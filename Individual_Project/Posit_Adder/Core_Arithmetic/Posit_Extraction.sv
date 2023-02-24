@@ -9,38 +9,27 @@
 //            : 
 // System     : SystemVerilog IEEE 1800-2005
 //            :
-// Author     : Xiaoan(Jasper) He 
+// Author     : Xiaoan He (Jasper)
 //            : xh2g20@ecs.soton.ac.uk
 //
-// Revision   : Version 1.1 30/11/2022
+// Revision   : Version 1.0 22/11/2022
 /////////////////////////////////////////////////////////////////////
 
-// `ifndef log_2
-// `define log_2
-// `include "log_2.sv"
-
-function [31:0] log2;
-    input reg [31:0] value;
-        begin
-            value = value-1;
-            for (log2=0; value>0; log2=log2+1)
-                value = value>>1;
-        end
-endfunction
-
-module Data_Extraction #( parameter N = 8, parameter ES = 3, parameter RS = log2(N))
+module Data_Extraction #( parameter N = 8, parameter ES = 3, parameter RS = $clog2(N))
 (
     input logic signed [N-1:0] In,
-    output logic Sign,
+    output logic signed Sign,
     output logic signed [RS:0] RegimeValue,
     output logic [ES-1:0] Exponent,
     output logic [N-ES+2:0] Mantissa,
-    output logic signed [N-2:0] InRemain
+    output logic signed [N-2:0] InRemain,
+    output logic inf,
+    output logic zero
 );
 
-//logic signed [N-2:0] InRemain;
+logic zero_check;
 logic RegimeCheck; 
-logic [RS:0] EndPosition;
+logic signed [RS:0] EndPosition;
 logic signed [N-2:0] ShiftedRemain;
 logic [(N-ES+2)-1-(N-ES-2)-1:0] ZERO = '0;
 int i;
@@ -48,24 +37,36 @@ Leading_Bit_Detector #(.N(N), .ES(ES)) LBD1 (.*);
 
 always_comb
 begin
+    //infinity & zero check;
+    zero_check = |In[N-2:0];
+    inf = In[N-1] & (~zero_check);
+    zero = ~(In[N-1] | zero_check);
+
     // Sign Bit Extraction
     Sign = In[N-1];
-    InRemain = Sign ? (~In[N-2:0] + 1'b1) : In[N-2:0]; // if sign bit is true, then 2's compliment
+
+    // if sign bit is 1, then 2's compliment
+    if (Sign)
+        InRemain = -In[N-2:0];
+    else   
+        InRemain = In[N-2:0];
+
 
     // Regime Bits Extraction
     /*
-     There is a Leading_Bit_Detector defined before the always_comb block 
-     which takes the input without sign bit as module input and outputs 
+     the Leading_Bit_Detector defined before the always_comb block 
+     takes the input without sign bit as module input and outputs 
      EndPosition of Regime Bits and RegimeCheck which is the 1st bit of Regime bits
     */
-    if(RegimeCheck == 1'b1)
-        RegimeValue = EndPosition - 1;
-    else if (RegimeCheck == 0)
+    if(zero)
+        RegimeValue = 0;
+    else if (RegimeCheck)
+        RegimeValue = EndPosition - 1'b1;
+        else 
         RegimeValue = -EndPosition;
-
     //Exponent Bits Extraction
-    ShiftedRemain = InRemain << (EndPosition + 1 );
-    Exponent = ShiftedRemain[N-1:((N-1)-ES)];
+    ShiftedRemain = InRemain << (EndPosition + 1'b1 );
+    Exponent = ShiftedRemain[N-2:((N-1)-ES)];
 
     //Mantissa Bits Extraction
     Mantissa = {1'b1, ShiftedRemain[N-ES-2:0], ZERO};

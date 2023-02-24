@@ -10,308 +10,308 @@ z2
 cModel Technology
 dH:/INDIVIDUAL PROJECT/Posit/posit_adder_verilog
 vadd_1
-Z0 !s110 1675906011
+Z0 !s110 1677006427
 !i10b 1
-!s100 ^gg0dD;08ONO`5i7_K8530
+!s100 H@f1B_a5WLoMUL;EVBG^X3
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I7]PF`le5fhIlWUV84VQP01
+IF6:^Ohj:g60R:a65NcFMR0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dH:/INDIVIDUAL PROJECT/Posit/mult
-Z4 w1675902966
-Z5 8H:/INDIVIDUAL PROJECT/Posit/mult/posit_mult.v
-Z6 FH:/INDIVIDUAL PROJECT/Posit/mult/posit_mult.v
-!i122 2
+Z3 dH:/INDIVIDUAL PROJECT/Posit/Reference Code/mult
+Z4 w1677006368
+Z5 8H:/INDIVIDUAL PROJECT/Posit/Reference Code/mult/posit_mult.v
+Z6 FH:/INDIVIDUAL PROJECT/Posit/Reference Code/mult/posit_mult.v
+!i122 6
 L0 158 7
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1675906011.000000
-Z9 !s107 H:/INDIVIDUAL PROJECT/Posit/mult/posit_mult.v|
-Z10 !s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/mult/posit_mult.v|
+Z8 !s108 1677006427.000000
+!s107 H:/INDIVIDUAL PROJECT/Posit/Reference Code/mult/posit_mult.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Reference Code/mult/posit_mult.v|
 !i113 1
-Z11 o-work work
-Z12 tCvgOpt 0
+Z10 o-work work
+Z11 tCvgOpt 0
 vadd_N
 R0
 !i10b 1
-!s100 D<@lfFeDe5aB_856D0dHL1
+!s100 fk>mRH0Fj7a<S:]gzRZC92
 R1
-IK^b?I>lJ<fK05XCdYfKJP2
+IPFViBbB@NTj:VaNLdTcKL0
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 140 6
 R7
 r1
 !s85 0
 31
 R8
+Z12 !s107 H:/INDIVIDUAL PROJECT/Posit/Reference Code/mult/posit_mult.v|
 R9
-R10
 !i113 1
+R10
 R11
-R12
 nadd_@n
 vadd_N_Cin
 R0
 !i10b 1
-!s100 NAKo`UAWV0jK@gQ9;Z?CP3
+!s100 eN43<=LV^@i2Y<UmOKz<81
 R1
-IDc>JbDo1@^dSPL6ofJn]m1
+IFBZQczzGgzLoLRSzjNhhf2
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 148 7
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 nadd_@n_@cin
 vconv_2c
 R0
 !i10b 1
-!s100 BCRkEU8Qag97WmFLjgQ2Q2
+!s100 `R;H0GNMmo:@n36XRA;7T3
 R1
-I?`Ua0?e2RmX2;Z3l_UEBN2
+IkgX<R7WN2E6`AlhnJajkh3
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 167 6
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 vdata_extract_v1
 R0
 !i10b 1
-!s100 o<g`k^P2@_aEf4[NeQfU20
+!s100 PLG74UU8E;TN[M?Jlg1o62
 R1
-I:@QSB:f8;5dXUKbJ[GgJ>2
+ILg[EjjlzDhVfm8ETnZTL70
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 92 37
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 vDSR_left_N_S
 R0
 !i10b 1
-!s100 _K8>4ZFbQeQmEYA9MlQ6G1
+!s100 >MYTVb3[ZmmS;Gd0Q`GaX2
 R1
-IdTE:VfC1mI8@]kz4lzbBA2
+IR?RUB5g9en:;3fWinDfHD3
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 192 18
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 n@d@s@r_left_@n_@s
 vDSR_right_N_S
 R0
 !i10b 1
-!s100 za_e4zS>[ie7@NfRZFiKA1
+!s100 deCz9XF165IUf24V@n]ol2
 R1
-Iz1Ag7m[hFk4_V^Rn1N7hT2
+IS^FFj;:NZEU]<S7QIj3j_0
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 213 18
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 n@d@s@r_right_@n_@s
 vLOD
 R0
 !i10b 1
-!s100 G0KU?j<Y5@NEm0CY`V<Z;0
+!s100 Ma1`kTBRhRU9e8JRh<e;W1
 R1
-IOfMiVFa6gL9V>g@J9aNad3
+IGm<k10[Y3TH0D789^:Z@P0
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 255 39
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 n@l@o@d
 vLOD_N
 R0
 !i10b 1
-!s100 XbN:hM>Sez=WK7GiSPhz63
+!s100 <L<gz>z9;kCN[;N]OUB6D3
 R1
-ICL65gRoKAS[h2l14cLi433
+IiZU]S;V4@cUzl5JmW:UWZ0
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 234 19
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 n@l@o@d_@n
 vposit_mult
 R0
 !i10b 1
-!s100 ?U6j<HIAb74boR2i1hL^X0
+!s100 aD0HTVWcoRCmT`i>:6J4C2
 R1
-I05:hnLH8UJ5RTcaGQaTKQ2
+INga:9S=XdID77A]kEFaO61
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 3 87
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 vposit_mult_8bit_tb_v
-R0
+!s110 1677006403
 !i10b 1
-!s100 Da^^8jB9ZQQPia6IeA[S:1
+!s100 TAGDF>>1Tkn5>R3iOhzYn3
 R1
-IloUX6OWT2K@XH9G3nX>B>2
+Ih0O33IVlU:Cijn8`lbfAc3
 R2
 R3
-w1675906005
-8H:\INDIVIDUAL PROJECT\Posit\mult\posit_mult_8bit_tb.v
-FH:\INDIVIDUAL PROJECT\Posit\mult\posit_mult_8bit_tb.v
-!i122 3
+w1677006393
+8H:/INDIVIDUAL PROJECT/Posit/Reference Code/mult/posit_mult_8bit_tb.v
+FH:/INDIVIDUAL PROJECT/Posit/Reference Code/mult/posit_mult_8bit_tb.v
+!i122 5
 L0 2 74
 R7
 r1
 !s85 0
 31
-R8
-!s107 H:\INDIVIDUAL PROJECT\Posit\mult\posit_mult_8bit_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|H:\INDIVIDUAL PROJECT\Posit\mult\posit_mult_8bit_tb.v|
+!s108 1677006403.000000
+!s107 H:/INDIVIDUAL PROJECT/Posit/Reference Code/mult/posit_mult_8bit_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Reference Code/mult/posit_mult_8bit_tb.v|
 !i113 1
+R10
 R11
-R12
 vreg_exp_op
 R0
 !i10b 1
-!s100 Jm_]Jeg:zb]fkXTc9^o]z3
+!s100 Y8<;WjmmQRN;oXSLVP4GO1
 R1
-I48i[MXh>:j]RDh0a[J6me1
+I^gWW0?lChc2RFE]iZ@]Wa0
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 175 15
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 vsub_N
 R0
 !i10b 1
-!s100 d6Ic>z8W=M4A9YmB>P=Vb3
+!s100 N8X2SPfn7?iOjnAkM7O>W3
 R1
-IVzDKfX_i]b@N9Ke[;P0@a3
+If:kgnfJ5HO4M=@g<KFIUF3
 R2
 R3
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 132 6
 R7
 r1
 !s85 0
 31
 R8
-R9
-R10
-!i113 1
-R11
 R12
+R9
+!i113 1
+R10
+R11
 nsub_@n

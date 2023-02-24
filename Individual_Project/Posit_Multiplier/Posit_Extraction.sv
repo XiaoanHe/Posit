@@ -26,10 +26,12 @@ module Data_Extraction #( parameter N = 8, parameter ES = 3, parameter RS = $clo
     output logic signed [RS+1:0] RegimeValue,
     output logic [ES-1:0] Exponent,
     output logic [N-ES+2:0] Mantissa,
-    output logic signed [N-2:0] InRemain
+    output logic signed [N-2:0] InRemain,
+    output logic inf,
+    output logic zero
 );
 
-assign Sign = In[N-1];
+logic zero_check;
 logic RegimeCheck; 
 logic signed [RS:0] EndPosition;
 logic signed [N-2:0] ShiftedRemain;
@@ -39,7 +41,13 @@ Leading_Bit_Detector #(.N(N), .ES(ES)) LBD1 (.*);
 
 always_comb
 begin
+    //infinity & zero check;
+    zero_check = |In[N-2:0];
+    inf = In[N-1] & (~zero_check);
+    zero = ~(In[N-1] | zero_check);
+
     // Sign Bit Extraction
+    Sign = In[N-1];
 
     // if sign bit is 1, then 2's compliment
     if (Sign)
@@ -54,11 +62,10 @@ begin
      which takes the input without sign bit as module input and outputs 
      EndPosition of Regime Bits and RegimeCheck which is the 1st bit of Regime bits
     */
-    if(RegimeCheck == 1'b1)
+    if(RegimeCheck)
         RegimeValue = EndPosition - 1'b1;
-    else if (RegimeCheck == 1'b0)
+    else 
         RegimeValue = -EndPosition;
-
     //Exponent Bits Extraction
     ShiftedRemain = InRemain << (EndPosition + 1'b1 );
     Exponent = ShiftedRemain[N-2:((N-1)-ES)];
