@@ -165,11 +165,13 @@ begin
         OUT = IN2;
     else if (zero2) 
         OUT = IN1;
-        else if (inf1)          
+    else if (inf1)          
         OUT = IN1;
-        else if (inf2)             
+    else if (inf2)             
         OUT = IN2;
-        else
+    else if (IN1 == -IN2)
+        OUT = {(N-1){1'b0}};
+    else
         OUT = {LS, sft_tmp_oN[N-1:1]};
 
 end
