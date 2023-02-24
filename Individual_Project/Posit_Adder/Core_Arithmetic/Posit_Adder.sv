@@ -161,7 +161,16 @@ begin
     //Final Output
     
     sft_tmp_oN = LS ? -sft_tmp_o_rnd : sft_tmp_o_rnd;
-    OUT = {LS, sft_tmp_oN[N-1:1]};
+    if (zero1)
+        OUT = IN2;
+    else if (zero2) 
+        OUT = IN1;
+        else if (inf1)          
+        OUT = IN1;
+        else if (inf2)             
+        OUT = IN2;
+        else
+        OUT = {LS, sft_tmp_oN[N-1:1]};
 
 end
 endmodule

@@ -5,12 +5,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Posit_Adder_tb
 
-} {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/Leading_Bit_Detector.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/Leading_Bit_Detector.sv}
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/8B_LBD.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/8B_LBD.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Leading_Bit_Detector
+-- Compiling module Leading_Bit_Detector_8B
 
 Top level modules:
-	Leading_Bit_Detector
+	Leading_Bit_Detector_8B
 
 } {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/Posit_Extraction.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/Posit_Extraction.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -19,18 +19,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Data_Extraction
 
-} {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/8B_LBD.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/8B_LBD.sv}
+} {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/Leading_Bit_Detector.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/Leading_Bit_Detector.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Leading_Bit_Detector_8B
+-- Compiling module Leading_Bit_Detector
 
 Top level modules:
-	Leading_Bit_Detector_8B
-
-} {} {}} {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/Posit_Adder.sv} {1 {vlog -work work -sv -stats=none {H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Core_Arithmetic/Posit_Adder.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Posit_Adder
-
-Top level modules:
-	Posit_Adder
+	Leading_Bit_Detector
 
 } {} {}}
