@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////////////
 // Design unit: Posit Adder Testbench
 //            :
-// File name  : Posit_Adder_tb.sv
+// File name  : Posit_Adder_8bits_tb.sv
 //            :
 // Description: Test Posit Adder
 //            :
@@ -12,12 +12,12 @@
 // Author     : Xiaoan(Jasper) He 
 //            : xh2g20@ecs.soton.ac.uk
 //
-// Revision   : Version 1.0 08/02/2023
+// Revision   : Version 1.0 20/02/2023
 /////////////////////////////////////////////////////////////////////
 timeunit 1ns; timeprecision 1ps;
 
 module Posit_Adder_tb;
-parameter N = 8, RS = $clog2(N), ES = 3;
+parameter N = 8, RS = $clog2(N), ES = 4;
 
 //input logic
 logic signed [N-1:0] IN1, IN2;
@@ -66,7 +66,7 @@ reg [15:0] i;
 	else i = i + 1;
  end
 
-initial outfile = $fopen("error_8bit.txt", "wb");
+initial outfile = $fopen("adder_error_8bit.txt", "wb");
 
 reg [N-1:0] result [1:65536];
 reg [N-1:0] show_result;

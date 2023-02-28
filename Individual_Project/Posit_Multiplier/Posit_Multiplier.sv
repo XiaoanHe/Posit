@@ -14,18 +14,18 @@
 //
 // Revision   : Version 1.1 21/02/2023
 /////////////////////////////////////////////////////////////////////
-
+timeunit 1ns; timeprecision 1ps;
 module Posit_Multiplier #(parameter N = 8, parameter ES = 3, parameter RS = $clog2(N)) 
 (
-    input logic[N-1:0] IN1, IN2,
-    output logic [N-1:0] OUT
+    input logic signed[N-1:0] IN1, IN2,
+    output logic signed[N-1:0] OUT
 );
 logic inf1, inf2, zero1, zero2, inf, zero;
 logic Sign1, Sign2;
 logic signed [N-2:0] InRemain1, InRemain2;
 logic signed [RS+1:0] RegimeValue1,RegimeValue2;
 logic [ES-1:0] Exponent1, Exponent2;
-logic [N-ES+2:0] Mantissa1, Mantissa2;
+logic [N-1:0] Mantissa1, Mantissa2;
 
 Data_Extraction #(.N(N), .ES(ES)) Extract_IN1 (.In(IN1), .Sign(Sign1), .RegimeValue(RegimeValue1), .Exponent(Exponent1), .Mantissa(Mantissa1), .InRemain(InRemain1), .inf(inf1), .zero(zero1));
 Data_Extraction #(.N(N), .ES(ES)) Extract_IN2 (.In(IN2), .Sign(Sign2), .RegimeValue(RegimeValue2), .Exponent(Exponent2), .Mantissa(Mantissa2), .InRemain(InRemain2), .inf(inf2), .zero(zero2));

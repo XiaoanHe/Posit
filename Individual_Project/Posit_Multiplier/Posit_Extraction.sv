@@ -25,7 +25,7 @@ module Data_Extraction #( parameter N = 8, parameter ES = 3, parameter RS = $clo
     output logic signed Sign,
     output logic signed [RS+1:0] RegimeValue,
     output logic [ES-1:0] Exponent,
-    output logic [N-ES+2:0] Mantissa,
+    output logic [N-1:0] Mantissa,
     output logic signed [N-2:0] InRemain,
     output logic inf,
     output logic zero
@@ -35,7 +35,9 @@ logic zero_check;
 logic RegimeCheck; 
 logic signed [RS:0] EndPosition;
 logic signed [N-2:0] ShiftedRemain;
-logic [(N-ES+2)-1-(N-ES-2)-1:0] ZERO = '0;
+// 8 bits - 1-bit hidden 1, N-ES-2 bit mant from ShiftedRemain, and compensate zeros afterwards
+logic [(N-1)-1-(N-ES-2)-1:0] ZEROs= '0;
+// logic [(N-ES+2)-1-(N-ES-2)-1:0] ZERO = '0;
 int i;
 Leading_Bit_Detector #(.N(N), .ES(ES)) LBD1 (.*);
 
@@ -71,6 +73,6 @@ begin
     Exponent = ShiftedRemain[N-2:((N-1)-ES)];
 
     //Mantissa Bits Extraction
-    Mantissa = {1'b1, ShiftedRemain[N-ES-2:0], ZERO};
+    Mantissa = {1'b1, ShiftedRemain[N-ES-2:0], ZEROs};
 end
 endmodule

@@ -14,8 +14,9 @@
 //
 // Revision   : Version 1.0 08/02/2023
 /////////////////////////////////////////////////////////////////////
+timeunit 1ns; timeprecision 1ps;
 module Posit_Multiplier_tb;
-parameter N = 8, RS = $clog2(N), ES = 3;
+parameter N = 8, RS = $clog2(N), ES = 4;
 
 //input logic
 logic signed [N-1:0] IN1, IN2;
@@ -27,7 +28,7 @@ Posit_Multiplier #(.N(N), .ES(ES)) Posit_Mult (.*);
 
 reg clk;
 integer outfile;
-
+reg start;
 reg [N-1:0] data1 [1:65536];
 reg [N-1:0] data2 [1:65536];
 initial $readmemb("Pin1_8bit.txt",data1);
@@ -40,13 +41,13 @@ reg [15:0] i;
 		IN1 = 0;
 		IN2 = 0;
 		clk = 0;
-		//start = 0;
+		start = 0;
 	
 		
 		// Wait 100 ns for global reset to finish
 		#100 i=0;
-		//#20 start = 1;
-                #655500 //start = 0;
+		#20 start = 1;
+                #655500 start = 0;
 		#100;
 		
 		$fclose(outfile);
@@ -66,10 +67,12 @@ reg [15:0] i;
 initial outfile = $fopen("error_8bit.txt", "wb");
 
 reg [N-1:0] result [1:65536];
+reg [N-1:0] show_result;
 initial $readmemb("Pout_8bit_ES4.txt",result);
 reg [N-1:0] diff;
 always @(negedge clk) begin
-	if(1)begin
+	if(start)begin
+        show_result = result[i-1];
      	diff = (result[i-1] > OUT) ? result[i-1]-OUT : OUT-result[i-1];
      	//$fwrite(outfile, "%h\t%h\t%h\t%h\t%d\n",in1, in2, out,result[i-1],diff);
      	$fwrite(outfile, "%d\n",diff);

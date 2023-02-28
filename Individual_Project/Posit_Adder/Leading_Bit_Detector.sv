@@ -34,7 +34,7 @@ begin
     EP = '0;
     EndPosition = EP + 1'b1; // initial EP starts from InRemain[1] as InRemain[0] is RC
 
-    for(i = 1; i < (N-2); i++) 
+    for(i = 1; i < (N-1); i++) 
         begin
             /* 
             compareing MSB of InRemain to the follwing bits
