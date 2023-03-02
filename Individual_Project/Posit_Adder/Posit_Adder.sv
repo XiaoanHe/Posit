@@ -112,7 +112,7 @@ begin
     
     // check for Mantissa Overflow
     Mant_Ovf = Add_Mant[N];
-    //Add_Mant = Mant_Ovf ? Add_Mant : (Add_Mant << 1);
+    // Add_Mant = Mant_Ovf ? Add_Mant : (Add_Mant << 1);
 
     /*
      In the case of subtraction between two close numbers
