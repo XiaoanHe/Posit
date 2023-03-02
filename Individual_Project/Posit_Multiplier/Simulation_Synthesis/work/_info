@@ -11,7 +11,7 @@ cModel Technology
 dH:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 adder
 vData_Extraction
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1677531323
+Z1 !s110 1677626530
 !i10b 1
 !s100 C7hz8h3hF]lHJ<Y9IFK1U3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ Z4 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Simulation_S
 w1677529265
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Extraction.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Extraction.sv
-!i122 27
+!i122 60
 L0 22 57
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1677531323.000000
+Z6 !s108 1677626530.000000
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Extraction.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Extraction.sv|
 !i113 1
@@ -37,7 +37,7 @@ Z8 tCvgOpt 0
 n@data_@extraction
 vLeading_Bit_Detector
 R0
-R1
+Z9 !s110 1677626531
 !i10b 1
 !s100 Kz0CmDD3HDoOm2ZS[IlHH2
 R2
@@ -48,7 +48,7 @@ R4
 w1677531320
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Leading_Bit_Detector.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Leading_Bit_Detector.sv
-!i122 28
+!i122 61
 L0 19 34
 R5
 r1
@@ -61,20 +61,46 @@ R6
 R7
 R8
 n@leading_@bit_@detector
+vPosit_Adder_32Bit_tb
+R0
+R9
+!i10b 1
+!s100 JbAZdRjWA4Il55i_5]i=Q2
+R2
+Io_2Ra`[SRhWX^JN;6[KAC2
+R3
+S1
+R4
+w1677624267
+8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_multiplier_32bits_tb.sv
+FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_multiplier_32bits_tb.sv
+!i122 62
+L0 20 65
+R5
+r1
+!s85 0
+31
+!s108 1677626531.000000
+!s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_multiplier_32bits_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_multiplier_32bits_tb.sv|
+!i113 1
+R7
+R8
+n@posit_@adder_32@bit_tb
 vPosit_Multiplier
 R0
 R1
 !i10b 1
-!s100 =jWC;38dUh8GL6Ik1XF]K0
+!s100 j3I;SdCd`O>z9CmK@R^IM1
 R2
-I;GI[C2f2kZVW6FUT;X`fo1
+IlH:nU3Xd^^8EOKmDLAX[13
 R3
 S1
 R4
-w1677530120
+w1677626521
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Multiplier.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Multiplier.sv
-!i122 26
+!i122 59
 L0 18 89
 R5
 r1
@@ -97,10 +123,10 @@ I7flB1QEBa^Z0N4MKH?od?3
 R3
 S1
 R4
-w1677530117
+w1677626528
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Multiplier_tb.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Posit_Multiplier_tb.sv
-!i122 25
+!i122 58
 L0 18 148
 R5
 r1

@@ -61,7 +61,7 @@ reg [15:0] i;
 	else i = i + 1;
  end
 
-initial outfile = $fopen("error_8bit.txt", "wb");
+initial outfile = $fopen("Multiplier_Error_8bit.txt", "wb");
 
 reg [N-1:0] result [1:65534];
 initial $readmemb("Pout_8bit_ES4.txt",result);
