@@ -13,10 +13,10 @@
 // Author     : Xiaoan(Jasper) He 
 //            : xh2g20@soton.ac.uk
 //
-// Revision   : Version 1.2 21/02/2023
+// Revision   : Version 2 05/03/2023
 /////////////////////////////////////////////////////////////////////
 //timeunit 1ns; timeprecision 1ps;
-module Posit_Adder #(parameter N = 8, parameter ES = 3, parameter RS = $clog2(N)) 
+module Posit_Adder #(parameter N = 8, parameter ES = 4, parameter RS = $clog2(N)) 
 (
     input logic[N-1:0] IN1, IN2,
     output logic [N-1:0] OUT
@@ -55,8 +55,10 @@ logic signed [RS:0] shift;
 logic [ES+RS:0] LE_ON;
 logic [N-1:0] RegimeBits;
 
-logic [(2*N-1)+3:0] tmp_o;
-logic [(3*N-1)+3:0] sft_tmp_o;
+// logic [(2*N-1)+3:0] tmp_o;
+logic [(N+ES+N+3)-1:0] tmp_o;
+// logic [(3*N-1)+3:0] sft_tmp_o;
+logic [(N+N+ES+N+3)-1:0]sft_tmp_o;
 logic L,G,R,S,ulp;
 logic [N-1:0] rnd_ulp; 
 logic [N:0] sft_tmp_o_rnd_ulp;
@@ -139,23 +141,23 @@ begin
     R_O = (~LE_O[ES+RS] || |(LE_ON[ES-1:0])) ? LE_ON[ES+RS-1:ES] + 1'b1 : LE_ON[ES+RS-1:ES];
 
  
-    tmp_o = { {N{~LE_O[ES+RS]}}, LE_O[ES+RS], E_O, Add_Mant_N[N-2:ES], 3'b0 };
+    tmp_o = { {N{~LE_O[ES+RS]}}, LE_O[ES+RS], E_O, Add_Mant_N[N-2:0], 3'b0 };
     sft_tmp_o = {tmp_o, {N{1'b0}}} ;
     sft_tmp_o = sft_tmp_o >> R_O;
 
-    L = sft_tmp_o[N+4]; 
-    G = sft_tmp_o[N+3]; // Guard bit
-    R = sft_tmp_o[N+2]; // round bit
-    S = |sft_tmp_o[N+1:0];  // sticky bit
+    L = sft_tmp_o[N+4+(N-(N-ES))]; 
+    G = sft_tmp_o[N+3+(N-(N-ES))]; // Guard bit
+    R = sft_tmp_o[N+2+(N-(N-ES))]; // round bit
+    S = |sft_tmp_o[N+1+(N-(N-ES)):0];  // sticky bit
     ulp = ((G & (R | S)) | (L & G & ~(R | S)));
     
     rnd_ulp= {{N-1{1'b0}},ulp};
 
     
-    sft_tmp_o_rnd_ulp = sft_tmp_o[2*N-1+3:N+3] + rnd_ulp;
+    sft_tmp_o_rnd_ulp = sft_tmp_o[2*N-1+3+(N-(N-ES)):N+3+(N-(N-ES))] + rnd_ulp;
 
     
-    sft_tmp_o_rnd = (R_O < N-ES-2) ? sft_tmp_o_rnd_ulp[N-1:0] : sft_tmp_o[2*N-1+3:N+3];
+    sft_tmp_o_rnd = (R_O < N-ES-2) ? sft_tmp_o_rnd_ulp[N-1:0] : sft_tmp_o[2*N-1+3+(N-(N-ES)):N+3+(N-(N-ES))];
 
 
     //Final Output
