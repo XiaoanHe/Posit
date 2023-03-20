@@ -1,4 +1,4 @@
-//`timescale 1ns / 1ps
+`timescale 1ns / 1ps
 module posit_mult_8bit_tb_v;
 
 function [31:0] log2;
@@ -12,7 +12,7 @@ endfunction
 
 parameter N=8;
 parameter Bs=log2(N);
-parameter es=3;
+parameter es=4;
 
 reg [N-1:0] in1, in2;
 reg start; 
@@ -61,7 +61,7 @@ reg [15:0] i;
 	else i = i + 1;
  end
 
-initial outfile = $fopen("error_8bit.txt", "wb");
+initial outfile = $fopen("Multiplier_Error_8bit.txt", "wb");
 
 reg [N-1:0] result [1:65534];
 initial $readmemb("Pout_8bit_ES4.txt",result);

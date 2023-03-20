@@ -13,7 +13,7 @@
 // Author     : Xiaoan(Jasper) He 
 //            : xh2g20@soton.ac.uk
 //
-// Revision   : Version 2 21/02/2023
+// Revision   : Version 1.2 21/02/2023
 /////////////////////////////////////////////////////////////////////
 //timeunit 1ns; timeprecision 1ps;
 module Posit_Adder #(parameter N = 8, parameter ES = 3, parameter RS = $clog2(N)) 
@@ -26,7 +26,7 @@ logic Sign1, Sign2;
 logic signed [N-2:0] InRemain1, InRemain2;
 logic signed [RS:0] RegimeValue1,RegimeValue2;
 logic [ES-1:0] Exponent1, Exponent2;
-logic [N-ES+2:0] Mantissa1, Mantissa2;
+logic [N-1:0] Mantissa1, Mantissa2;
 
 Data_Extraction #(.N(N), .ES(ES)) Extract_IN1 (.In(IN1), .Sign(Sign1), .RegimeValue(RegimeValue1), .Exponent(Exponent1), .Mantissa(Mantissa1), .InRemain(InRemain1), .inf(inf1), .zero(zero1));
 Data_Extraction #(.N(N), .ES(ES)) Extract_IN2 (.In(IN2), .Sign(Sign2), .RegimeValue(RegimeValue2), .Exponent(Exponent2), .Mantissa(Mantissa2), .InRemain(InRemain2), .inf(inf2), .zero(zero2));
@@ -112,7 +112,7 @@ begin
     
     // check for Mantissa Overflow
     Mant_Ovf = Add_Mant[N];
-    //Add_Mant = Mant_Ovf ? Add_Mant : (Add_Mant << 1);
+    // Add_Mant = Mant_Ovf ? Add_Mant : (Add_Mant << 1);
 
     /*
      In the case of subtraction between two close numbers
@@ -144,9 +144,9 @@ begin
     sft_tmp_o = sft_tmp_o >> R_O;
 
     L = sft_tmp_o[N+4]; 
-    G = sft_tmp_o[N+3]; 
-    R = sft_tmp_o[N+2]; 
-    S = |sft_tmp_o[N+1:0];
+    G = sft_tmp_o[N+3]; // Guard bit
+    R = sft_tmp_o[N+2]; // round bit
+    S = |sft_tmp_o[N+1:0];  // sticky bit
     ulp = ((G & (R | S)) | (L & G & ~(R | S)));
     
     rnd_ulp= {{N-1{1'b0}},ulp};

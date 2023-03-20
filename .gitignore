@@ -113,3 +113,80 @@ Reference Code/add/work/_lib.qdb
 Reference Code/add/work/_lib1_13.qdb
 Reference Code/add/work/_lib1_13.qpg
 Reference Code/add/work/_lib1_13.qtl
+.vscode/launch.json
+.vscode/c_cpp_properties.json
+*.qtl
+*.qpg
+*.qdb
+*.wlf
+*.mpf
+*.mti
+*.wlf
+*.qpg
+*.qdb
+*.qtl
+*.kpt
+*.cdb
+*.hdb
+*.qmsg
+*.rdb
+*.xml
+*.bpm
+*.idb
+*.logdb
+*.hsd
+*.db_info
+*.hier_info
+*.hif
+*.html
+*.ammdb
+*.sci
+*.tdb
+*.ddb
+*.tmw_info
+*.dfp
+*.sig
+*.rcfdb
+*.dpi
+*.hb_info
+*.rpt
+*.done
+*.smsg
+*.summary
+*.jdi
+*.pin
+*.sld
+*.sof
+*.qpf
+*.qsf
+*.qws
+*.sft
+*.vo
+Reference Code/add/Simulation/work/_info
+Reference Code/add/Simulation/work/_vmake
+Reference Code/floating point 32 adder/work/_vmake
+Reference Code/floating point 32 adder/work/_info
+Reference Code/floating point 32 mult/c5_pin_model_dump.txt
+Reference Code/mult/Simulation/work/_vmake
+Reference Code/mult/Simulation/work/_info
+Reference Code/posit adder (assumption)/Simulation/work/_vmake
+Reference Code/posit adder (assumption)/Simulation/work/_info
+Reference Code/posit_adder_sv/work/_info
+Reference Code/posit_adder_sv/work/_vmake
+*.mti
+Individual_Project/Posit_Adder/Simulation_Synthesis/work/_info
+Individual_Project/Posit_Adder/Simulation_Synthesis/wlfts2dw5y
+Individual_Project/Posit_Adder/Simulation_Synthesis/wlftraw3y9
+Individual_Project/Posit_Adder/Simulation_Synthesis/wlftgdyegg
+Individual_Project/Posit_Adder/Simulation_Synthesis/wlft24znx0
+Individual_Project/Posit_Adder/Simulation_Synthesis/work/_info
+*.wlf
+*.bak
+*.wlf
+Individual_Project/Posit_Adder/Posit_Adder_32bits_tb.sv
+Individual_Project/Posit_Adder/Simulation_Synthesis/work/_info
+Individual_Project/Posit_Multiplier/Simulation_Synthesis/32bit_out.txt
+Individual_Project/Posit_Multiplier/Simulation_Synthesis/work/_info
+Reference Code/add/Simulation/error_8bit.txt
+Reference Code/mult/posit_mult_8bit_tb.v
+Reference Code/posit_adder_sv/vsim.wlf
