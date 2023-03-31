@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Simulation_Synthesis
+vfpmultiplier
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1680016695
+!i10b 1
+!s100 gCme=3[^45MH6<S?18SH@1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IPoS<FnCk[CbUeYI4?Ydo83
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dH:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult
+w1662389103
+8H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/fpmultiplier.sv
+FH:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/fpmultiplier.sv
+!i122 14
+L0 1 256
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1680016694.000000
+!s107 H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/fpmultiplier.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/fpmultiplier.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vtest_fpmultiplier
+R0
+R1
+!i10b 1
+!s100 i668=SgC:[SXBO8;X0ShM0
+R2
+I_6oAm^Yo44^B]zPk21BSo1
+R3
+S1
+R4
+w1680016688
+8H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/test_mult.sv
+FH:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/test_mult.sv
+!i122 15
+L0 1 76
+R5
+r1
+!s85 0
+31
+!s108 1680016695.000000
+!s107 H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/test_mult.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/test_mult.sv|
+!i113 1
+R6
+R7

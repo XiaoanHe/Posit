@@ -16,7 +16,7 @@
 // Revision   : Version 1.0 21/2/2023
 /////////////////////////////////////////////////////////////////////
 
-module Leading_Bit_Detector_8B #( parameter N = 8, parameter ES = 3, parameter RS = $clog2(N))
+module Leading_Bit_Detector_8B #( parameter N = 32, parameter ES = 4, parameter RS = $clog2(N))
 (
     input logic  [N-1:0] In,
     output logic signed [RS:0] EndPosition

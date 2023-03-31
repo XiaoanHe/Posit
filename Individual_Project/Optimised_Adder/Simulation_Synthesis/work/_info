@@ -11,24 +11,24 @@ cModel Technology
 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Simulation_Synthesis
 vData_Extraction
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1678008380
+Z1 !s110 1679954981
 !i10b 1
-!s100 :aRdh5FK77V97^DYJ;[?b3
+!s100 72KV1fT]BNUL8JV0>?icN3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IFCef30QeiIlnWlPnHn=9m1
+IRKfn56AdaPoFVSg@Oi8^N0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Simulation_Synthesis
-w1678004287
+w1679585914
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Extraction.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Extraction.sv
-!i122 49
+!i122 307
 L0 18 61
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1678008380.000000
+Z6 !s108 1679954981.000000
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Extraction.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Extraction.sv|
 !i113 1
@@ -37,18 +37,18 @@ Z8 tCvgOpt 0
 n@data_@extraction
 vLeading_Bit_Detector
 R0
-Z9 !s110 1678008381
+R1
 !i10b 1
-!s100 Kz0CmDD3HDoOm2ZS[IlHH2
+!s100 h4b0PYm2;0^gUd_Fmb_HL1
 R2
-I^0ZG=AdV7h2JCc:OnET`O3
+I;[o]ogL0hhbAG:FIKm]5^2
 R3
 S1
 R4
-w1677531630
+w1679585905
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Leading_Bit_Detector.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Leading_Bit_Detector.sv
-!i122 53
+!i122 311
 L0 19 34
 R5
 r1
@@ -63,24 +63,24 @@ R8
 n@leading_@bit_@detector
 vLeading_Bit_Detector_8B
 R0
-R9
+!s110 1679954982
 !i10b 1
-!s100 fzH72J8YEDz;1i]WHmSd[2
+!s100 XPfOFKYHJOA[>FA4L^O:P0
 R2
-IcfE4<`<cK9C4[kA4oTMlW0
+I6dOkSRokUTDY7okIA[j@V3
 R3
 S1
 R4
-w1677030944
+w1679585937
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/8B_LBD.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/8B_LBD.sv
-!i122 54
+!i122 312
 L0 19 33
 R5
 r1
 !s85 0
 31
-!s108 1678008381.000000
+R6
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/8B_LBD.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/8B_LBD.sv|
 !i113 1
@@ -91,22 +91,22 @@ vPosit_Adder
 R0
 R1
 !i10b 1
-!s100 h1Gf0bMXOjM:eR_;Al<z>0
+!s100 ^f`cDcMF1BmYTQB[iGQ7X1
 R2
-I??JA8Nc0^=KTOknK1>N1:3
+IA=g`9koe?5BXV]B4FP>RQ0
 R3
 S1
 R4
-w1678008375
+w1679585889
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder.sv
-!i122 48
-L0 19 162
+!i122 306
+L0 19 186
 R5
 r1
 !s85 0
 31
-R6
+!s108 1679954980.000000
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder.sv|
 !i113 1
@@ -126,7 +126,7 @@ R4
 w1677714347
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder_32bits-2_tb.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder_32bits-2_tb.sv
-!i122 52
+!i122 310
 L0 20 70
 R5
 r1
@@ -143,17 +143,17 @@ vPosit_Adder_32Bit_es4_tb
 R0
 R1
 !i10b 1
-!s100 l2=Ia=n6Q70i:dVdahS=O3
+!s100 <7`SHMU0?Nkcz43l8Y9h11
 R2
-ITonOdJ`nG@Ti^EcOaHhEo3
+I3Me<?SzjBnS]Ek=TVUSzZ1
 R3
 S1
 R4
-w1677733145
+w1679954974
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder_32bits-4_tb.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder_32bits-4_tb.sv
-!i122 50
-L0 20 86
+!i122 308
+L0 20 228
 R5
 r1
 !s85 0
@@ -178,7 +178,7 @@ R4
 w1677716429
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder_tb.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Adder/Posit_Adder_tb.sv
-!i122 51
+!i122 309
 L0 19 122
 R5
 r1

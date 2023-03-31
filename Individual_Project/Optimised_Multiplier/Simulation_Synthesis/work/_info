@@ -11,131 +11,157 @@ cModel Technology
 dH:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 adder
 vData_Extraction
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1678063128
+Z1 !s110 1679603275
 !i10b 1
-!s100 C7hz8h3hF]lHJ<Y9IFK1U3
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IN;J5C5VdB9INKhHUIS@?M2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 S>AIBa:h2:V8i_@1QogL>1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[@XeSQ[jlJR3IDhlOZz3K1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z3 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Simulation_Synthesis
-w1677529265
+Z4 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Simulation_Synthesis
+w1678171768
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Extraction.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Extraction.sv
-!i122 129
+!i122 227
 L0 22 57
-Z4 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1678063128.000000
+Z6 !s108 1679603275.000000
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Extraction.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Extraction.sv|
 !i113 1
-Z5 o-work work -sv
-Z6 tCvgOpt 0
+Z7 o-work work -sv
+Z8 tCvgOpt 0
 n@data_@extraction
 vLeading_Bit_Detector
 R0
-Z7 !s110 1678063126
+R1
 !i10b 1
 !s100 Kz0CmDD3HDoOm2ZS[IlHH2
-R1
-I6eAc<enI0W@iF;H<Z@:GZ3
 R2
-S1
+I6eAc<enI0W@iF;H<Z@:GZ3
 R3
+S1
+R4
 w1677531320
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Leading_Bit_Detector.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Leading_Bit_Detector.sv
-!i122 128
+!i122 230
 L0 19 34
-R4
+R5
 r1
 !s85 0
 31
-Z8 !s108 1678063126.000000
+R6
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Leading_Bit_Detector.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Leading_Bit_Detector.sv|
 !i113 1
-R5
-R6
+R7
+R8
 n@leading_@bit_@detector
+vMult_Arithmetic
+R0
+R1
+!i10b 1
+!s100 2Kd4H8g@X=YC:oda_QM^Q2
+R2
+IEC53d3b5boLOCeZ:?IDHF0
+R3
+S1
+R4
+w1678171818
+Z9 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier.sv
+Z10 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier.sv
+!i122 226
+L0 18 91
+R5
+r1
+!s85 0
+31
+R6
+Z11 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier.sv|
+Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier.sv|
+!i113 1
+R7
+R8
+n@mult_@arithmetic
 vPosit_Adder_32Bit_ES4_tb
 R0
-R7
+R1
 !i10b 1
 !s100 cg0L=2gSfkVJkV2[ZKaB31
-R1
-IYo@JSSo[5DaTen3if9kj>1
 R2
-S1
+IYo@JSSo[5DaTen3if9kj>1
 R3
+S1
+R4
 w1677732976
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_multiplier_32bits_tb.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_multiplier_32bits_tb.sv
-!i122 126
+!i122 228
 L0 20 59
-R4
+R5
 r1
 !s85 0
 31
-R8
+R6
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_multiplier_32bits_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_multiplier_32bits_tb.sv|
 !i113 1
-R5
-R6
+R7
+R8
 n@posit_@adder_32@bit_@e@s4_tb
 vPosit_Multiplier
 R0
-R7
+!s110 1678143478
 !i10b 1
-!s100 =iZ9cO:W8OSj1U`EZI`ML3
-R1
-I8[MdX?Q35Vco;B_C;Xee:1
+!s100 j3I;SdCd`O>z9CmK@R^IM1
 R2
-S1
+I`:Vz:FGR]<7jLAPiMCL:A2
 R3
-w1678063122
-8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier.sv
-FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier.sv
-!i122 125
-L0 18 96
+S1
 R4
+w1678142793
+R9
+R10
+!i122 221
+L0 18 89
+R5
 r1
 !s85 0
 31
-R8
-!s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier.sv|
+!s108 1678143478.000000
+R11
+R12
 !i113 1
-R5
-R6
+R7
+R8
 n@posit_@multiplier
 vPosit_Multiplier_8B_tb
 R0
-R7
+R1
 !i10b 1
 !s100 nUQ7;WA0Jmf>nRz78W6MG3
-R1
-IAH8fNITU6>X6aa5X0f6V]1
 R2
-S1
+IAH8fNITU6>X6aa5X0f6V]1
 R3
+S1
+R4
 w1677723756
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier_tb.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier_tb.sv
-!i122 127
+!i122 229
 L0 18 148
-R4
+R5
 r1
 !s85 0
 31
-R8
+R6
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Optimised_Multiplier/Posit_Multiplier_tb.sv|
 !i113 1
-R5
-R6
+R7
+R8
 n@posit_@multiplier_8@b_tb

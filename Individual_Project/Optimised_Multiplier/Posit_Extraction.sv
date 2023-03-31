@@ -23,7 +23,7 @@ module Data_Extraction #( parameter N = 8, parameter ES = 3, parameter RS = $clo
 (
     input logic signed [N-1:0] In,
     output logic signed Sign,
-    output logic signed [RS+1:0] RegimeValue,
+    output logic signed [RS+1:0] k,
     output logic [ES-1:0] Exponent,
     output logic [N-1:0] Mantissa,
     output logic signed [N-2:0] InRemain,
@@ -65,9 +65,9 @@ begin
      EndPosition of Regime Bits and RegimeCheck which is the 1st bit of Regime bits
     */
     if(RegimeCheck)
-        RegimeValue = EndPosition - 1'b1;
+        k = EndPosition - 1'b1;
     else 
-        RegimeValue = -EndPosition;
+        k = -EndPosition;
     //Exponent Bits Extraction
     ShiftedRemain = InRemain << (EndPosition + 1'b1 );
     Exponent = ShiftedRemain[N-2:((N-1)-ES)];
