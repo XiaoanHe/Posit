@@ -33,7 +33,7 @@ Data_Extraction #(.N(N), .ES(ES)) Extract_IN2 (.In(IN2), .Sign(Sign2), .RegimeVa
 /*  the output of multipilcation between 2 N-bit inputs is 2N bit long
     '+1' is used for overflow check
 */
-logic Operation;
+logic Sign_o;
 logic [2*N-1:0] Mult_Mant;
 logic [2*N-1:0] Mult_Mant_N;
 logic Mant_mult_Ovf;
@@ -54,7 +54,7 @@ begin
     inf = inf1 | inf2;
 	zero = zero1 | zero2;
 
-    Operation = Sign1 ^ Sign2;
+    Sign_o = Sign1 ^ Sign2;
     //  Mantissa Multiplication Handling
     Mult_Mant = Mantissa1 * Mantissa2;
     Mant_mult_Ovf = Mult_Mant[2*N-1];
@@ -99,8 +99,8 @@ begin
 
     //Final Output
     
-    sft_tmp_oN = Operation ? -sft_tmp_o_rnd : sft_tmp_o_rnd;
-    OUT = inf|zero ? {inf,{N-1{1'b0}}} : {Operation, sft_tmp_oN[N-1:1]};
-    //OUT = {Operation, sft_tmp_oN[N-1:1]};
+    sft_tmp_oN = Sign_o ? -sft_tmp_o_rnd : sft_tmp_o_rnd;
+    OUT = inf|zero ? {inf,{N-1{1'b0}}} : {Sign_o, sft_tmp_oN[N-1:1]};
+    //OUT = {Sign_o, sft_tmp_oN[N-1:1]};
 end
 endmodule
