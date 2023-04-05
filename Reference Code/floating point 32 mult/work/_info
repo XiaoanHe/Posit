@@ -11,7 +11,7 @@ cModel Technology
 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Multiplier/Simulation_Synthesis
 vfpmultiplier
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1680016695
+Z1 !s110 1680708573
 !i10b 1
 !s100 gCme=3[^45MH6<S?18SH@1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,40 +22,40 @@ Z4 dH:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult
 w1662389103
 8H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/fpmultiplier.sv
 FH:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/fpmultiplier.sv
-!i122 14
+!i122 24
 L0 1 256
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1680016694.000000
+Z6 !s108 1680708573.000000
 !s107 H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/fpmultiplier.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/fpmultiplier.sv|
 !i113 1
-Z6 o-work work -sv
-Z7 tCvgOpt 0
+Z7 o-work work -sv
+Z8 tCvgOpt 0
 vtest_fpmultiplier
 R0
 R1
 !i10b 1
-!s100 i668=SgC:[SXBO8;X0ShM0
+!s100 l5e6_O^f@_5TH:2A[A`4Y3
 R2
-I_6oAm^Yo44^B]zPk21BSo1
+I0FM?zk@zQie6:^JY`H7FF1
 R3
 S1
 R4
-w1680016688
+w1680708558
 8H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/test_mult.sv
 FH:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/test_mult.sv
-!i122 15
-L0 1 76
+!i122 25
+L0 1 93
 R5
 r1
 !s85 0
 31
-!s108 1680016695.000000
+R6
 !s107 H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/test_mult.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Reference Code/floating point 32 mult/test_mult.sv|
 !i113 1
-R6
 R7
+R8
