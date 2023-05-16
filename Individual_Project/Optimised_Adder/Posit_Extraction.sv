@@ -1,9 +1,9 @@
 /////////////////////////////////////////////////////////////////////
-// Design unit: DataExtraction
+// Design unit: Data Extraction
 //            :
 // File name  : Posit_Extraction.sv
 //            :
-// Description: Extracting posit element from n bits binary number
+// Description: 
 //            :
 // Limitations: None
 //            : 
@@ -12,7 +12,7 @@
 // Author     : Xiaoan He (Jasper)
 //            : xh2g20@ecs.soton.ac.uk
 //
-// Revision   : Version 1.0 22/11/2022
+// Revision   : Version 1.2 23/03/2022
 /////////////////////////////////////////////////////////////////////
 
 module Data_Extraction #( parameter N = 32, parameter ES = 4, parameter RS = $clog2(N))

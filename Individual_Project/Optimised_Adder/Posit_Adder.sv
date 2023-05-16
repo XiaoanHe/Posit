@@ -149,9 +149,13 @@ begin
     else
         LE_ON = LE_O;
 
-    E_O = LE_O[ES-1:0];
+    if (LE_O[ES+RS] & |(LE_ON[ES-1:0]))
+        E_O = -LE_ON[ES-1:0];
+    else
+        E_O = LE_ON[ES-1:0];
 
-    if (~LE_O[ES+RS] || |(LE_ON[ES-1:0]))
+    // if (~LE_O[ES+RS] || |(LE_ON[ES-1:0]))
+    if (~LE_O[ES+RS] || (LE_O[ES+RS] & |(LE_ON[ES-1:0])))
         R_O = LE_ON[ES+RS-1:ES] + 1'b1;
     else
         R_O = LE_ON[ES+RS-1:ES];

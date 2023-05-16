@@ -24,7 +24,7 @@ logic signed [N-1:0] IN1, IN2;
 //output logic
 logic signed [N-1:0] OUT;
 
-Posit_Multiplier #(.N(N), .ES(ES)) Posit_Mult (.*);
+Mult_Arithmetic #(.N(N), .ES(ES)) Posit_Mult (.*);
 
 reg clk;
 integer outfile;

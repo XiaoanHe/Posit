@@ -9,31 +9,57 @@ z2
 !i10f 100
 cModel Technology
 dH:/INDIVIDUAL PROJECT/Posit/Reference Code/add
-vData_Extraction
+vAdd_Subtract
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1678007787
+Z1 !s110 1681902982
 !i10b 1
-!s100 B2k92W[zKHgPg]2;PHa@l3
+!s100 gc_ciGJ_5DKGOF2J6F`491
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IIT;zXjSS5>W[h@;[X2d9_2
+I?iS_`<dog_B8HVK^f:Hji2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 dH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Simulation_Synthesis
-w1677441716
-8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Extraction.sv
-FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Extraction.sv
-!i122 275
-L0 18 61
+w1681898693
+8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Add_Sub_Arithmetic.sv
+FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Add_Sub_Arithmetic.sv
+!i122 322
+L0 19 130
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1678007787.000000
-!s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Extraction.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Extraction.sv|
+Z6 !s108 1681902982.000000
+!s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Add_Sub_Arithmetic.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Add_Sub_Arithmetic.sv|
 !i113 1
 Z7 o-work work -sv
 Z8 tCvgOpt 0
+n@add_@subtract
+vData_Extraction
+R0
+Z9 !s110 1681902981
+!i10b 1
+!s100 @mR<EREO;4JAiIWAiH:Ec2
+R2
+I`_];nLaZHYS:k<nA@AO7i1
+R3
+S1
+R4
+w1681899183
+8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Extraction.sv
+FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Extraction.sv
+!i122 317
+L0 18 61
+R5
+r1
+!s85 0
+31
+Z10 !s108 1681902981.000000
+!s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Extraction.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Extraction.sv|
+!i113 1
+R7
+R8
 n@data_@extraction
 vLeading_Bit_Detector
 R0
@@ -45,16 +71,16 @@ I`zDLS[XHPz_kndNc:JmeM0
 R3
 S1
 R4
-w1677531630
+w1681898629
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Leading_Bit_Detector.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Leading_Bit_Detector.sv
-!i122 276
+!i122 318
 L0 19 34
 R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Leading_Bit_Detector.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Leading_Bit_Detector.sv|
 !i113 1
@@ -63,7 +89,7 @@ R8
 n@leading_@bit_@detector
 vLeading_Bit_Detector_8B
 R0
-R1
+R9
 !i10b 1
 !s100 fzH72J8YEDz;1i]WHmSd[2
 R2
@@ -74,13 +100,13 @@ R4
 w1677030944
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/8B_LBD.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/8B_LBD.sv
-!i122 274
+!i122 316
 L0 19 33
 R5
 r1
 !s85 0
 31
-Z9 !s108 1678007786.000000
+R10
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/8B_LBD.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/8B_LBD.sv|
 !i113 1
@@ -89,33 +115,33 @@ R8
 n@leading_@bit_@detector_8@b
 vPosit_Adder
 R0
-Z10 !s110 1678007786
+R1
 !i10b 1
-!s100 @EeI?MUVNN0cZT_j3YEP31
+!s100 WM7OFAd6d2EgYJGY:D<Df1
 R2
-I>UDOC>:Na_T5cHR]h<YHJ2
+IfRlV>09ERZ9TTEeDJ43cd3
 R3
 S1
 R4
-w1678007777
-8H:\INDIVIDUAL PROJECT\Posit\Individual_Project\Posit_Adder\Posit_Adder.sv
-FH:\INDIVIDUAL PROJECT\Posit\Individual_Project\Posit_Adder\Posit_Adder.sv
-!i122 272
-L0 19 160
+w1681898960
+8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_Top_Level.sv
+FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_Top_Level.sv
+!i122 321
+L0 18 30
 R5
 r1
 !s85 0
 31
-R9
-!s107 H:\INDIVIDUAL PROJECT\Posit\Individual_Project\Posit_Adder\Posit_Adder.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:\INDIVIDUAL PROJECT\Posit\Individual_Project\Posit_Adder\Posit_Adder.sv|
+R6
+!s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_Top_Level.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_Top_Level.sv|
 !i113 1
 R7
 R8
 n@posit_@adder
 vPosit_Adder_32Bit_es2_tb
 R0
-R1
+!s110 1681899059
 !i10b 1
 !s100 KJTLzNb1bXgPFGF6eBEik0
 R2
@@ -126,13 +152,13 @@ R4
 w1677714347
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_32bits-2_tb.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_32bits-2_tb.sv
-!i122 277
+!i122 297
 Z11 L0 20 70
 R5
 r1
 !s85 0
 31
-R6
+!s108 1681899059.000000
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_32bits-2_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_32bits-2_tb.sv|
 !i113 1
@@ -149,10 +175,10 @@ I@?QYI6A_5EAWCdLIFI:e33
 R3
 S1
 R4
-w1677733145
+w1681898977
 Z12 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_32bits-4_tb.sv
 Z13 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_32bits-4_tb.sv
-!i122 278
+!i122 319
 L0 20 86
 R5
 r1
@@ -193,7 +219,7 @@ R8
 n@posit_@adder_32@bit_tb
 vPosit_Adder_tb
 R0
-R10
+R9
 !i10b 1
 !s100 E@6TGa8ezhYG:miRl8mRm0
 R2
@@ -204,16 +230,42 @@ R4
 w1677716429
 8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_tb.sv
 FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_tb.sv
-!i122 273
+!i122 315
 L0 19 122
 R5
 r1
 !s85 0
 31
-R9
+R10
 !s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Posit_Adder_tb.sv|
 !i113 1
 R7
 R8
 n@posit_@adder_tb
+vRounding
+R0
+R1
+!i10b 1
+!s100 5@zz1f9RYhPLY[Z4Q;VCj0
+R2
+ISkMfF8VGRZ`>aKEfd>jJ^0
+R3
+S1
+R4
+w1681902979
+8H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Rounding.sv
+FH:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Rounding.sv
+!i122 320
+L0 19 65
+R5
+r1
+!s85 0
+31
+R6
+!s107 H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Rounding.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|H:/INDIVIDUAL PROJECT/Posit/Individual_Project/Posit_Adder/Rounding.sv|
+!i113 1
+R7
+R8
+n@rounding
